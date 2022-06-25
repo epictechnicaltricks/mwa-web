@@ -10,6 +10,30 @@
  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="style.css">
 
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyCDCQRFm2kbiDUy_MWDSB95etkhypWga50",
+    authDomain: "menaka-web-agency.firebaseapp.com",
+    projectId: "menaka-web-agency",
+    storageBucket: "menaka-web-agency.appspot.com",
+    messagingSenderId: "358440019283",
+    appId: "1:358440019283:web:5e5f69933871ffbf71eda6",
+    measurementId: "G-2QBNYFY7LB"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+
 
 
 
@@ -116,6 +140,8 @@ function hideMenu(){
             <h3>Mobile Apps</h3>
             <span>Create your own apps at an affordable price.</span>
           </div>
+
+          
           <div class="card__separate"></div>
           <button type="button" class="card__add-btn">learn more</button>
         </div>
